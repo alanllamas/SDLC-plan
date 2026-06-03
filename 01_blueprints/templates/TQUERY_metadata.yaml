@@ -1,0 +1,32 @@
+# ==============================================================================
+# ENGINE CORE: UNIFIED INTERACTIVE TQUERY TEMPLATE
+# Copied and populated by any agent experiencing a block, gap, or conflict.
+# ==============================================================================
+
+tquery:
+  id: "TQ_XXX"                          # Incremental ID (e.g., TQ_001)
+  trigger_type: "[KNOWLEDGE_GAP | SCOPE_DRIFT | CONFLICT_RESOLUTION]"
+  originating_agent: "[AGENT_ROLE]"       # e.g., PM Orchestrator, Git Butler
+  active_branch: "proposal/[DOC_ID]"    # The branch frozen by this query
+  
+  context_bounds:
+    file_in_focus: "governance/[path/to/file.md]"
+    problem_statement: |
+      [Insert a concise, 1-2 sentence description of the block or gap in plain business terms.]
+  
+  actionable_options:
+    option_alpha: |
+      [Action Alpha description: Define the exact path and its immediate impact.]
+    option_beta: |
+      [Action Beta description: Define the alternative path and its immediate impact.]
+    option_custom: |
+      "Provide custom guidance, clear text overrides, or structural instructions here."
+  
+  # ==========================================
+  # HUMAN-IN-THE-LOOP RESOLUTION GATE
+  # ==========================================
+  hitl_decision:
+    selected_option: null               # alpha | beta | custom
+    provided_input: null                # Raw natural language input or string override if custom
+    timestamp: null                     # YYYY-MM-DDTHH:MM:SSZ upon human submission
+    signatory_fingerprint: null         # Your authorization mark

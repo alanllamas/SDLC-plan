@@ -20,10 +20,12 @@ Mandates the operational protocols for identifying product-logic conflicts, mana
 * **Conflict Intelligence Report:** If a disagreement persists, the system compiles the Challenge and Rebuttal into a structured **Conflict Intelligence Report**.
     * **Advisory Proposal:** Agents may submit multiple, distinct solution paths labeled "Non-Binding Agent Proposal."
     * **Consultation Request:** If complexity is high, the agent proposes a human consultation meeting with a suggested agenda.
-* **Human Resolution:** The system presents this report to the HITL for final decision. The system maintains current project state (no autonomous locking/resolution) until signed by a human.
+* **Human Resolution:** The system presents this report to the HITL for final decision. The system maintains current project state until signed by a human.
+
 ## 3.5 Protocol: Compliance with BDR_004 (Intelligence-First)
 * **Mandatory Prerequisite:** Compliance with the Intelligence-First Mandate (`BDR_004`) is a non-negotiable prerequisite for all lifecycle transitions within the system.
-* **Audit Requirement:** All lifecycle status changes (e.g., `DRAFT` -> `ACTIVE`) must be accompanied by an "Intelligence Audit" confirming that no assumptions were used to fulfill the document requirements.
+* **Audit Requirement:** All lifecycle status changes (e.g., `DRAFT` $\rightarrow$ `ACTIVE`) must be accompanied by an "Intelligence Audit" confirming that no assumptions were used to fulfill the document requirements.
+
 ## 4. Protocol: Impact Analysis & Change Management
 * **Proposal-Only Mandate:** Agents are strictly forbidden from auto-refactoring the stack. They must generate "Proposed Updates" (Draft Files) linked to the stale files.
 * **Human-in-the-Loop Authority:** All updates and "Supersession Chains" require explicit human command ("Approve Lineage Chain") before integration into the active stack.
