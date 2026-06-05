@@ -77,3 +77,6 @@ los agentes no deben permitir que el humano se divague en otros ambitos que no s
 agentes de analisis de codigo y seguridad
 
 backlog management
+
+
+genera un anota en horizonte futuro de negocio por favor, la idea detras es si vale la pena que el sistema ayude a mantener tambien los archivos de toda la empresa en un sistema de version de control tipo git para darle trazabilidad a los archivos de todas las areas y que no se pueda perder nada y todo tenga evidencias
